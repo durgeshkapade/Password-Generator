@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #df7a7a;
+}
+
+.container {
+    background-color: #3ee9a5;
+    border-radius: 10px;
+    /* padding: 30px; */
+    /* padding-right: 40px;  */
+    /* text-align: center; */
+    height: 500px;
+    width: 350px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.password-display {
+    margin-bottom: 20px;
+    width: 290px;
+    
+}
+
+#password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.options {
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: left;
+}
+
+.options label {
+    /* display: block; */
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.options input[type="checkbox"] {
+    margin: 10px;
+    
+}
+
+
+.strength {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.length{
+    margin-bottom: 80px;
+}
+
+#strength-meter {
+    width: 100px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#generate {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 58px;
+}
+
+#generate:hover {
+    background-color: #0067cc;
+}
+
+
+
+/* slider code */
+
+.slider {
+    appearance: 0;
+    -webkit-appearance: none;
+    width: 300px;
+    height: 15px;
+    border-radius: 5px;  
+    background: #1977e9;
+    outline: 1px solid black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #000000;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+  }
+
+  .slidecontainer{
+    padding: 17px 0 0px 0px;
+  }
+  .slidecontainer output{
+    
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>PASSWORD GENERATOR</h1>
+        
+        <div class="password-display">
+            <input type="text" id="password" value="password" readonly>
+        </div>
+
+        <div class="options">
+            <label class="length" for="length">Password Length:</label>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="20" value="0" class="slider" id="myRange" text="Default slider:" smooth=yes oninput="this.nextElementSibling.value = this.value">
+                <output class="length_number">1</output>
+            </div>
+            <br>
+            <label for="uppercase">Include Uppercase Letters:</label>
+            <input type="checkbox" id="uppercase" >
+            <br>
+            <label for="lowercase">Include Lowercase Letters:</label>
+            <input type="checkbox" id="lowercase" >
+            <br>
+            <label for="numbers">Include Numbers:</label>                                                             
+            <input type="checkbox" id="numbers" >
+            <br>
+            <label for="symbols">Include Symbols:</label>
+            <input type="checkbox" id="symbols" >
+            <br>
+        </div>
+
+        <div class="strength">
+            <label for="strength">Strength:</label>
+            <span id="strength-meter"></span>
+        </div>
+
+        <button id="generate">GENERATE PASSWORD</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
